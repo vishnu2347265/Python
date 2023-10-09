@@ -1,0 +1,48 @@
+body {
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.home_main {
+    background-image: url(3239480.webp);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home_second {
+    min-height: 80vh;
+    background-color: white;
+}
+
+.home_main_heading {
+    color: white;
+    width: 35%;
+    position: relative;
+    padding-top: 10%;
+    left: 35%;
+    margin: -25px 0 0 -25px;
+}
+
+.home_main_heading h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 75px;
+}
+
+.home_main_heading p {
+    text-align: center;
+    margin-top: 4%;
+    font-size: larger;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
