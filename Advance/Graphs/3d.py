@@ -1,3 +1,4 @@
+from matplotlib import figure
 import numpy as np
 from numpy import linspace
 import pandas as pd
@@ -7,17 +8,22 @@ from mpl_toolkits.mplot3d import Axes3D
 from scipy import signal
 from mpl_toolkits.basemap import Basemap
 import ipympl
-df = pd.read_csv('Iris.csv')
-setosa=df[df['Species']=='Iris-setosa']
-versicolor=df[df['Species']=='Iris-versicolor']
-virginica=df[df['Species']=='Iris-virginica']
-plt.rcParams['font.size']=10
-fig=plt.figure()
-ax=fig.add_subplot(111, projection='3d')
-ax.bar(setosa['Id'],setosa['PetalWidthCm'], zs=1, zdir='x', color='red', alpha=0.8)
-ax.bar(versicolor['Id'],versicolor['PetalWidthCm'], zs=2, zdir='x', color='green', alpha=0.8)
-ax.bar(virginica['Id'],virginica['PetalWidthCm'], zs=3, zdir='x', color='blue', alpha=0.8)
-ax.set_xlabel('Species')
-ax.set_ylabel('Id')
-ax.set_zlabel('PetalWidthCm')
-plt.show()
+
+
+
+
+
+data=pd.read_csv("D:\Progrmming\Python\Advance\Lab1\Q8_MortalityDataset.csv")
+alive = data[data['MORT'] == 'alive']
+dead = data[data['MORT']=='dead']
+
+fig =  plt.figure()
+
+
+ax1 = fig.add_subplot(223,projection='3d')
+ax1.scatter(alive['HEIGHT'], alive['WEIGHT'], alive['AGE'], c='b', marker='o', label='Alive')
+ax1.set_title('3D scatter plot')
+ax1.set_xlabel('Height')
+ax1.set_ylabel('Weight')
+ax1.set_zlabel('Age')
+ax1.legend()

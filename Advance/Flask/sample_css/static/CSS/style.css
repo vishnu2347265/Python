@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+.h1{
+    text-align: center;
+    color: white;
+}
+.h2{
+    color: wheat;
+
+}
+
+.p{
+    color: white;
+  text-indent: 30px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+img{
+    background: url("/path") no-repeat; 
+         width: 100px; 
+         height: 100px; 
+         display: block; 
+         text-indent: -9999px;
+         margin-top: 1em;
+}
