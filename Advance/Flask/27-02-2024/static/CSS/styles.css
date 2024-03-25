@@ -31,6 +31,24 @@ nav {
     align-items: center;
     margin: 1rem;
 }
+table {
+    background-color: #333;
+    color: #ddd; 
+    width: 90%;
+    border-collapse: collapse; /* Added for better border handling */
+    border: 2px solid #ddd; /* Added border */
+}
+
+tr {
+    border: 2px solid #ddd; /* Added border */
+}
+th{
+    border: 2px solid #ddd;
+}
+td {
+    text-align: center;
+    border: 2px solid #ddd;
+}
 
 nav a {
     float: left;
@@ -69,4 +87,12 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
+}
+.logout{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
